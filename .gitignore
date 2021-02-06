@@ -1,0 +1,7 @@
+# Rstudio project files and folders
+*.Rproj
+.Rproj.user
+
+# project specific fildes and folders
+data
+temp.txt
