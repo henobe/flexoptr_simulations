@@ -5,3 +5,5 @@
 # project specific fildes and folders
 data
 temp.txt
+*.html
+*.Rmd
