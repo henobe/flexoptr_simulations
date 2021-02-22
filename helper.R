@@ -2,6 +2,11 @@ library("tidyverse") # data manipulation and presentation
 library("lubridate") # date time management
 library("cowplot") # plot alignment
 library("flexoptr") # self developed library
+# library("showtext") # font manipulation
+
+# font_add("cmodern", "cmunrm.ttf")
+# showtext_auto()
+
 
 read_da_data <- function(start_date, end_date) {
   read_csv("data/dadata.csv",
@@ -114,7 +119,7 @@ extract_revenues <- function(strategy_simulations, price_modifier = NULL) {
 
 percent_label <- function(x) paste(round(x * 100), "%")
 
-theme_thesis <- function(base_size = 12, base_family = "Helvetica", vlines = TRUE) {
+theme_thesis <- function(base_size = 14, base_family = "Helvetica", vlines = TRUE) {
   base_theme <- function() {
     theme_classic(base_size = base_size, base_family = base_family)
   }
